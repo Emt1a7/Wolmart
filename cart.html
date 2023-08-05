@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rrrr</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ========Header part start========= -->
+    <header id="header">
+        <div class="header_one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="header_text">
+                            <p>WELCOME TO WOLMART STORE MESSAGE OR REMOVE IT!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="user_header">
+                            <div class="user_drp">
+                                <p>USD <i class="fa-solid fa-chevron-down"></i></p>
+                                <ul>
+                                    <li><span></span></li>
+                                    <li><a href="#">EUR</a></li>
+                                    <li><a href="#">USD</a></li>
+                                </ul>
+                            </div>
+                            <div class="user_drp">
+                                <p><img src="./images/i.flag.png" alt="img"> ENG <i
+                                        class="fa-solid fa-chevron-down"></i></p>
+                                <ul>
+                                    <li><span></span></li>
+                                    <li><a href="#"><img src="./images/i.flag.png" alt="img"> ENG</a></li>
+                                    <li><a href="#"><img src="./images/france.png" alt="img"> FRA</a></li>
+                                </ul>
+                            </div>
+                            <div class="user_acc">
+                                <ul>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Contact US</a></li>
+                                    <li><a href="">My Account</a></li>
+                                    <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-regular fa-user"></i> Sign In/Register</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ++++Header modal start++++ -->
+            <!-- Modal -->
+            <div class="modal fade header_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+
+                        <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fa-solid fa-xmark"></i></button>
+
+                        <div class="modal-body">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                        aria-selected="true">SIGN IN</button>
+                                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-profile" type="button" role="tab"
+                                        aria-controls="nav-profile" aria-selected="false">SIGN UP</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                    aria-labelledby="nav-home-tab" tabindex="0">...</div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                    aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ++++Header modal end++++ -->
+        </div>
+        <div class="header_two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="header_logo">
+                            <img src="./images/4e842fec-b924-4b3c-bf94-2fb58f07d0f9.png" class="img-fluid w-75"
+                                alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="header_search d-flex">
+                            <select>
+                                <option value="">All Categories</option>
+                                <option value="">Fashion</option>
+                                <option value="">Lifestyle</option>
+                                <option value="">Clothes</option>
+                                <option value="">Hobbies</option>
+                            </select>
+                            <div class="input">
+                                <input type="text" placeholder="Search In..">
+                            </div>
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="header_contact">
+                            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="text">
+                                <a href="emti377@gmail.com" class="live_chat">Live Chat <span>or:</span></a>
+                                <p><a href="tel:0(800)123-456" class="number">0(800)123-456</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 cartt">
+                        <div class="header_cart">
+                            <div class="cart">
+                                <ul>
+                                    <li><a href=""><i class="fa-regular fa-heart"></i>
+                                            <span>Wishlist</span></a></li>
+                                    <li><a href=""><i class="fa-solid fa-scale-balanced"></i></i>
+                                            <span>Compare</span></a></li>
+                                    <li><a href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                            aria-controls="offcanvasRight"><i class="fa-solid fa-bag-shopping"></i></i>
+                                            <span>Cart</span></a></li>
+                                </ul>
+
+
+                                <div class="offcanvas offcanvas-end cart_offcanvas" tabindex="-1" id="offcanvasRight"
+                                    aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">SHOPPING CART</h5>
+                                        <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">Close <i
+                                                class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="cart_detail">
+                                            <div class="item">
+                                                <div class="item_detail">
+                                                    <h5>Apple Super Notecom</h5>
+                                                    <p>1 × <span>$243.40</span></p>
+                                                </div>
+                                                <div class="item_picture">
+                                                    <img src="./images/Apple-Super-Notecom-1-300x338.jpg"
+                                                        class="img-fluid w-100" alt="">
+
+                                                </div>
+                                                <span class="close">&times;</span>
+                                            </div>
+                                            <div class="cart_total">
+                                                <div class="total_value">
+                                                    <h4>Subtotal: </h4><span>$243.40</span>
+                                                </div>
+                                                <div class="cart_btns">
+                                                    <div class="view_cart">
+                                                        <a href="#">VIEW CART</a>
+                                                    </div>
+                                                    <div class="checkout">
+                                                        <a href="#">CHECKOUT</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===========Header part end========= -->
+
+    <!-- ==========Menu part sstart========= -->
+    <section id="main_menu" class="collapsed sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="browse_menu">
+                        <div class="text_chev">
+                            <h4><i class="fa-solid fa-list"></i> BROWSE CATEGORIES</h4>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="menu_list">
+                            <ul class="menu_items">
+                                <li><a href="#"><i class="fa-solid fa-shirt"></i> Fashion</a>
+                                    <div class="fashion_menu">
+                                        <ul class="fashion_list">
+                                            <li class="header_border">
+                                                <a href="#">
+                                                    <h6>WOMEN</h6>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">New Arrivals</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Best Sellers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Trending</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Clothing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shoes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Bags</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Accessories</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Jewlery & Watches</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="fashion_list">
+                                            <li class="header_border">
+                                                <a href="#">
+                                                    <h6>MEN</h6>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">New Arrivals</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Best Sellers</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Trending</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Clothing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shoes</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Bags</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Accessories</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Jewlery & Watches</a>
+                                            </li>
+                                        </ul>
+                                        <div class="fashion_img">
+                                            <img src="./images/fashion.jpg" class="w-100" alt="img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-house"></i> Home & Garden</a>
+                                    <div class="home_menu">
+                                        <div class="home_items">
+                                            <ul class="home_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>BEDROOM</h6>
+                                                    </a></li>
+                                                <li><a href="#">Beds, Frames & Bases</a></li>
+                                                <li><a href="#">Dressers</a></li>
+                                                <li><a href="#">Nightstands</a></li>
+                                                <li><a href="#">Kid's Beds & Headboards</a></li>
+                                                <li><a href="#">Armoires</a></li>
+                                            </ul>
+                                            <ul class="home_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>OFFICE</h6>
+                                                    </a></li>
+                                                <li><a href="#">Office Chairs</a></li>
+                                                <li><a href="#">Desks</a></li>
+                                                <li><a href="#">Bookcases</a></li>
+                                                <li><a href="#">File Cabinets</a></li>
+                                                <li><a href="#">Breakroom Tables</a></li>
+                                            </ul>
+                                            <ul class="home_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>LIVING ROOM</h6>
+                                                    </a></li>
+                                                <li><a href="#">Coffee Tables</a></li>
+                                                <li><a href="#">Chairs</a></li>
+                                                <li><a href="#">Tables</a></li>
+                                                <li><a href="#">Futons & Sofa Beds</a></li>
+                                                <li><a href="#">Cabinets & chests</a></li>
+                                            </ul>
+                                            <ul class="home_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>KITCHEN & DINING</h6>
+                                                    </a></li>
+                                                <li><a href="#">Dining Sets</a></li>
+                                                <li><a href="#">Kitchen Storage Cabinets</a></li>
+                                                <li><a href="#">Bashers Racks</a></li>
+                                                <li><a href="#">Dining Chairs</a></li>
+                                                <li><a href="#">Dining Room Tables</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="home_img">
+                                            <img src="./images/home.jpg" class="w-100 h-100" alt="img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-tv"></i> Electronics</a>
+                                    <div class="elect_menu">
+                                        <div class="elect_items">
+                                            <ul class="elect_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>LAPTOPS & COMPUTERS</h6>
+                                                    </a></li>
+                                                <li><a href="#">Desktop Computers</a></li>
+                                                <li><a href="#">Monitors</a></li>
+                                                <li><a href="#">Laptops</a></li>
+                                                <li><a href="#">Hard Drives & Storage</a></li>
+                                            </ul>
+                                            <ul class="elect_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>DIGITAL CAMERAS</h6>
+                                                    </a></li>
+                                                <li><a href="#">Digital SLR Cameras</a></li>
+                                                <li><a href="#">Sports & Action Cameras</a></li>
+                                                <li><a href="#">Camera Lenses</a></li>
+                                                <li><a href="#">Photo Printer</a></li>
+                                            </ul>
+                                            <ul class="elect_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>TV & VIDEO</h6>
+                                                    </a></li>
+                                                <li><a href="#">TVS</a></li>
+                                                <li><a href="#">Home Audio Speakers</a></li>
+                                                <li><a href="#">Projectors</a></li>
+                                                <li><a href="#">Media Streaming Devices</a></li>
+                                            </ul>
+                                            <ul class="elect_list">
+                                                <li class="header_border"><a href="">
+                                                        <h6>CELL PHONES</h6>
+                                                    </a></li>
+                                                <li><a href="#">Carrier Phones</a></li>
+                                                <li><a href="#">Unlocked Phones</a></li>
+                                                <li><a href="#">Phone & Cellphone Cases</a></li>
+                                                <li><a href="#">Cellphone Chargers</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="elect_img">
+                                            <img src="./images/elect_img.jpg" class="w-100 h-100" alt="img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-couch"></i> Furniture</a>
+                                    <div class="furn_items">
+                                        <div class="furn_item">
+                                            <div class="furn_item1">
+                                                <ul class="furn_list">
+                                                    <li class="header_border"><a href="#">
+                                                            <h6>FURNITURE</h6>
+                                                        </a></li>
+                                                    <li><a href="#">Sofas & Couches</a></li>
+                                                    <li><a href="#">Armchairs</a></li>
+                                                    <li><a href="#">Bed Frames</a></li>
+                                                    <li><a href="#">Beside Tables</a></li>
+                                                    <li><a href="#">Dressing Tables</a></li>
+                                                </ul>
+                                                <ul class="furn_list">
+                                                    <li class="header_border"><a href="#">
+                                                            <h6>LIGHTING</h6>
+                                                        </a></li>
+                                                    <li><a href="#">Light Bulbs</a></li>
+                                                    <li><a href="#">Lamps</a></li>
+                                                    <li><a href="#">Celling Lights</a></li>
+                                                    <li><a href="#">Wall Lights</a></li>
+                                                    <li><a href="#">Bathroom Lighting</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="furn_img">
+                                                <img src="./images/furn_img1.jpg" class="w-100" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="furn_item">
+                                            <div class="furn_item1">
+                                                <ul class="furn_list">
+                                                    <li class="header_border"><a href="#">
+                                                            <h6>HOME ACCESSORIES</h6>
+                                                        </a></li>
+                                                    <li><a href="#">Decorative Accessories</a></li>
+                                                    <li><a href="#">Candals & Holders</a></li>
+                                                    <li><a href="#">Home Fragrance</a></li>
+                                                    <li><a href="#">Mirrors</a></li>
+                                                    <li><a href="#">Clocks</a></li>
+                                                </ul>
+                                                <ul class="furn_list">
+                                                    <li class="header_border"><a href="#">
+                                                            <h6>GARDEN & OUTDOORS</h6>
+                                                        </a></li>
+                                                    <li><a href="#">Garden Furniture</a></li>
+                                                    <li><a href="#">Lawn Mowers</a></li>
+                                                    <li><a href="#">Pressure Washers</a></li>
+                                                    <li><a href="#">All Garden Tools</a></li>
+                                                    <li><a href="#">Outdoor Dining</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="furn_img">
+                                                <img src="./images/furn_img2.jpg" class="w-100" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><i class="fa-solid fa-heart-pulse"></i> Health & Beauty</a></li>
+                                <li><a href="#"><i class="fa-solid fa-gift"></i> Gift Ideas</a></li>
+                                <li><a href="#"><i class="fa-solid fa-gamepad"></i> Toy & Games</a></li>
+                                <li><a href="#"><i class="fa-solid fa-bowl-rice"></i> Cooking</a></li>
+                                <li><a href="#"><i class="fa-solid fa-mobile-screen-button"></i> Smart Phones</a></li>
+                                <li><a href="#"><i class="fa-solid fa-camera"></i> Cameras & Photo</a></li>
+                                <li><a href="#"><i class="fa-regular fa-gem"></i> Accessories</a></li>
+                            </ul>
+                            <div class="categories">
+                                <a href="#">VIEW ALL CATEGORIES <i class="fa-solid fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <nav class="navbar navbar-expand-lg  ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="#">Shop</a>
+                                    <div class="shop_menu">
+                                        <ul class="shop_list">
+                                            <li>
+                                                <h5>SHOP PAGES</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Banner With Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Boxed Banner</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Full Width Banner</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Horizontal FilterHOT</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Off Canvas SidebarNEW</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Infinite Ajax Scroll</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Right Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Full Width Sidebar</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="shop_list">
+                                            <li>
+                                                <h5>SHOP LAYOUTS</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">3 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">4 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">5 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">6 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">7 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">8 Columns Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">List Mode</a>
+                                            </li>
+                                            <li>
+                                                <a href="">List Mode With Sidebar</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="shop_list">
+                                            <li>
+                                                <h5>PRODUCT PAGES</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Variable Product</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Featured & Sale</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Data In Accordion</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Data In Sections</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Image Swatch</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Extended Info</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Without Sidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="">360o & Video</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="shop_list">
+                                            <li>
+                                                <h5>PRODUCT LAYOUTS</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">DefaultHOT</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Vertical Thumbs</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Grid Images</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Masonry</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Gallery</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Sticky Info</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Sticky Thumbs</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Sticky Both</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active nav_link" href="#">Vendor</a>
+                                    <div class="vendor_menu">
+                                        <ul class="vendor_list">
+                                            <li>
+                                                <h5>DOKAN</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Store list</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Dashboard</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="vendor_list">
+                                            <li>
+                                                <h5>WC MARKETPLACE</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Store list</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Dashboard</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="vendor_list">
+                                            <li>
+                                                <h5>WCFM</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Store list</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Dashboard</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="vendor_list">
+                                            <li>
+                                                <h5>WC VENDORS</h5>
+                                            </li>
+                                            <li>
+                                                <a href="">Store list</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Dashboard</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav_link" href="#">Blog</a>
+                                    <div class="blog_menu">
+                                        <ul class="blog_list">
+                                            <li><a href="#">Classic</a></li>
+                                            <li><a href="#">Listing</a></li>
+                                            <li><a href="#">Grid</a><i class="fa-solid fa-chevron-right"></i></li>
+                                            <li><a href="#">Masonry</a><i class="fa-solid fa-chevron-right"></i></li>
+                                            <li><a href="#">Mask</a><i class="fa-solid fa-chevron-right"></i></li>
+                                            <li><a href="#">Single Post</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav_link" href="#">Pages</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav_link" href="#">Element</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-2">
+                    <div class="track">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Track Order</p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="deals">
+                        <i class="fa-solid fa-tags"></i>
+                        <p>Daily Deals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===========Menu part end========= -->
+    <!-- ===========cart part start========= -->
+    <section id="cart">
+        <div class="container">
+            <div class="bcrumb">
+                <a href="#" class="active">Shopping Cart</a> <i class="fa-solid fa-chevron-right"></i> <a href="#">Checkout</a> <i class="fa-solid fa-chevron-right"></i> <a href="#">Order Complete</a>
+            </div>
+            <p>
+                Your cart is currently empty.
+            </p>
+            <div class="icon">
+                <img src="./images/Icon.png" alt="icon">
+            </div>
+            <div class="return">
+                <a href="">RETURN TO SHOP</a>
+            </div>
+        </div>
+    </section>
+    <!-- ===========cart part end========= -->
+    <!-- ===========newsletter part start========= -->
+    <section id="newsletter">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-5">
+                    <div class="details">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="text">
+                            <h6>SUBSCRIBE TO OUR NEWSLETTER</h6>
+                            <p>Get all the latest information on Events, Sales and Offers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="mail">
+                        <input id="user_email" name="user[email]" placeholder="Your E-mail Address" type="email" />
+                        <button type="submit" value="SUBSCRIBE">
+                            SUBSCRIBE <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ===========newsletter part end========= -->
+    <!-- ===========footer part start========= -->
+    <footer>
+        <div class="container">
+            <div class="about_us">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                            <img src="./images/4e842fec-b924-4b3c-bf94-2fb58f07d0f9.png" class="img-fluid w-100" alt="">
+                        </div>
+                        <div class="text">
+                            <h6>Got Question? Call us 24/7</h6>
+                            <a href="tel:#" class="telephone">1-800-570-7777</a>
+                            <p>Register now to get updates on pronot get
+                                up ions & coupons ster now toon.</p>
+                        </div>
+                        <div class="icons">
+                            <a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="tw"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="int"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="yt"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="pint"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <div class="company">
+                            <h3>COMPANY</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Team Member</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Affilate</a></li>
+                                <li><a href="#">Order History</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <div class="account">
+                            <h3>MY ACCOUNT</h3>
+                            <ul>
+                                <li><a href="#">Track My Order</a></li>
+                                <li><a href="#">View Cart</a></li>
+                                <li><a href="#">Sign In</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">My Wishlist</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-flex justify-content-center">
+                        <div class="service">
+                            <h3>CUSTOMER SERVICE</h3>
+                            <ul>
+                                <li><a href="#">Payment Methods</a></li>
+                                <li><a href="#">Money-back guarantee!</a></li>
+                                <li><a href="#">Products Returns</a></li>
+                                <li><a href="#">Support Center</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Term and Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product_list">
+                <div class="container">
+                    <div class="list">
+                        <h4>Consumer Electric: </h4>
+                        <ul>
+                            <li><a href="#"> TV Television</a></li>
+                            <li><a href="#"> Air Condition</a></li>
+                            <li><a href="#"> Refrigator</a></li>
+                            <li><a href="#"> Washing Machine</a></li>
+                            <li><a href="#"> Audio Speaker</a></li>
+                            <li><a href="#"> Security Camera</a></li>
+                            <li><a href="#"> View all</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Clothing & Apparel: </h4>
+                        <ul>
+                            <li><a href="#">Men T-shirt </a></li>
+                            <li><a href="#">Dresses </a></li>
+                            <li><a href="#">Men's Sneaker </a></li>
+                            <li><a href="#">Leather Backpack </a></li>
+                            <li><a href="#">Watches </a></li>
+                            <li><a href="#">Jeans </a></li>
+                            <li><a href="#">Sunglasses </a></li>
+                            <li><a href="#">Boots </a></li>
+                            <li><a href="#">Rayban </a></li>
+                            <li><a href="#">Accessories </a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Home, Garden & Kitchen: </h4>
+                        <ul>
+                            <li><a href="#">Sofa </a></li>
+                            <li><a href="#">Chair </a></li>
+                            <li><a href="#">Bed Room </a></li>
+                            <li><a href="#">Living Room </a></li>
+                            <li><a href="#">Cookware </a></li>
+                            <li><a href="#">Utensil </a></li>
+                            <li><a href="#">Blender </a></li>
+                            <li><a href="#">Garden Equipments </a></li>
+                            <li><a href="#">Decor </a></li>
+                            <li><a href="#">Library </a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Health & Beauty: </h4>
+                        <ul>
+                            <li><a href="#">Skin Care </a></li>
+                            <li><a href="#">Body Shower </a></li>
+                            <li><a href="#">Makeup </a></li>
+                            <li><a href="#">Hair Care </a></li>
+                            <li><a href="#">Lipstick </a></li>
+                            <li><a href="#">Perfume </a></li>
+                            <li><a href="#">View all </a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Jewelry & Watches: </h4>
+                        <ul>
+                            <li><a href="#"> Necklace</a></li>
+                            <li><a href="#">Pendant </a></li>
+                            <li><a href="#">Diamond Ring </a></li>
+                            <li><a href="#">Silver Earing</a></li>
+                            <li><a href="#">Leather Watcher </a></li>
+                            <li><a href="#">Rolex</a></li>
+                            <li><a href="#">Gucci </a></li>
+                            <li><a href="#">Australian Opal </a></li>
+                            <li><a href="#"> Ammolite</a></li>
+                            <li><a href="#">Sun Pyrite </a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <h4>Computer & Technologies: </h4>
+                        <ul>
+                            <li><a href="#">Laptop </a></li>
+                            <li><a href="#">iMac </a></li>
+                            <li><a href="#">Smartphone </a></li>
+                            <li><a href="#">Tablet </a></li>
+                            <li><a href="#">Apple </a></li>
+                            <li><a href="#"> Asus</a></li>
+                            <li><a href="#">Drone </a></li>
+                            <li><a href="#">Wireless Speaker </a></li>
+                            <li><a href="#">Game Controller </a></li>
+                            <li><a href="#">View all </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <p>Copyright © 2023 Wolmart Store. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end align-items-center">
+                        <p>We're using safe payment for</p>
+                        <div class="image"><img src="./images/maestro.png" class="img-fluid w-100" alt="img"></div>
+                        <div class="image"><img src="./images/discover.png" class="img-fluid w-100" alt="img"></div>
+                        <div class="image"><img src="./images/visa.png" class="img-fluid w-100" alt="img"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ===========footer part end========= -->
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="js/deals_slide.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
